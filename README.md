@@ -202,6 +202,14 @@ rules: {
 },
 ~~~
 
+## Llenar al menos uno de varios campos
+
+~~~
+$.validator.addClassRules("fillone", {
+    require_from_group: [1, ".fillone"]
+});
+~~~
+
 ## Enviar controlador
 
 ~~~
