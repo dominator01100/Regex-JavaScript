@@ -206,8 +206,14 @@ rules: {
 ## Llenar al menos uno de varios campos
 
 ~~~
+$.validator.addMethod(
+    "xrequire_from_group",
+    $.validator.methods.require_from_group,
+    "Pick at least one."
+);
+
 $.validator.addClassRules("fillone", {
-    require_from_group: [1, ".fillone"]
+    xrequire_from_group: [1, ".fillone"],
 });
 ~~~
 
