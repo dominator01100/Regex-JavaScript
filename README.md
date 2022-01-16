@@ -206,8 +206,10 @@ rules: {
 
 ~~~
 $("#myform").validate({
-  submitHandler: function(form) {
-    form.submit();
+    submitHandler: function (form) {
+        form.submit();
+    },
+});
 ~~~
 
 ----------
